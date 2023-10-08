@@ -1,0 +1,12 @@
+{
+    "about-title": "About Me",
+    "greeting": "They call me Meli. I'm from Buenos Aires, Argentina, and I enjoy designing and programming a lot. Contact me!",
+    "description": "I'm an organized person with great motivation, passionate about <span class='text-purple-500 font-bold'>design and technology.</span> As a graduate in Arts, my devotion to painting and design led me to explore the digital field. Currently, I'm working as a Jr. Frontend Developer at <a class='text-blue-600 font-bold' href='https://winguweb.org/' target='_blank'>Wingu</a> <i>- Technology NGO -</i> and at <a class='text-yellow-300 font-bold' href='https://beinspiringtools.com/' target='_blank'>Be Inspiring Tools</a> <i>- Internal Communication and Design agency -</i> providing web support and graphic design.",
+    "latest-projects": "Latest projects",
+    "subtitle-projects": "Since the beginning of my career as a designer and developer, I have worked on projects for individual clients, agencies, and also on personal projects.",
+    "tools": " Design Tools I Used:",
+    "landing": "Annual agency campaign for promotion and sale of services",
+    "cats": "Card game with pictures of my kittens",
+    "app": "Mobile application - design and interactive prototype",
+    "final": "Made with 💜😺"
+}
