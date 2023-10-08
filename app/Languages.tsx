@@ -11,10 +11,21 @@ const languages = [
     code: "en",
   },
 ];
-
+/* 
 const getInitialValueFromLocalStorage = () => {
   return localStorage.getItem("language") || "es";
+}; */
+const getInitialValueFromLocalStorage = () => {
+  let storedLanguage = "es"; // Valor predeterminado
+
+  if (typeof window !== "undefined") {
+    storedLanguage = localStorage.getItem("language") || "es";
+  }
+
+  return storedLanguage;
 };
+
+
 
 const Languages = () => {
   const { i18n } = useTranslation();
