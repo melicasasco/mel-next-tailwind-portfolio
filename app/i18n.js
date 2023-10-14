@@ -7,6 +7,7 @@ import en from "./utils/languages/en.json"
 const storedLanguage = localStorage.getItem("language");
 
 
+
 i18n
   .use(initReactI18next)
   .init({

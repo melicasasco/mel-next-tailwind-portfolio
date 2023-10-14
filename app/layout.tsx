@@ -96,7 +96,7 @@ export default function RootLayout() {
                     {t("about-title")}
                   </h3>
                   <p className="text-md py-2 leading-8  text-white  text-gray-800 dark:text-gray-200">
-                  <div className="description-container" dangerouslySetInnerHTML={{ __html: description }} />
+                  <span className="description-container" dangerouslySetInnerHTML={{ __html: description }} />
                   </p>
                 </div>
               </section>
@@ -109,7 +109,7 @@ export default function RootLayout() {
                     {t("subtitle-projects")}
                   </p>
                 </div>
-                <div className="lg:flex gap-10">
+                <div className="lg:flex gap-10 mx-auto justify-center">
                   <a
                     className="w-[300px] h-[400px]"
                     href="https://melicasasco.github.io/the-new-people-experience/"
@@ -168,6 +168,7 @@ export default function RootLayout() {
                       <p className="text-white  py-1">XD ADOBE</p>
                     </div>
                   </a>
+                  
                 </div>
               </section>
               <div className="text-center text-white p-10 py-8">

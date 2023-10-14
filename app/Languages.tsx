@@ -16,7 +16,7 @@ const getInitialValueFromLocalStorage = () => {
   return localStorage.getItem("language") || "es";
 }; */
 const getInitialValueFromLocalStorage = () => {
-  let storedLanguage = "es"; // Valor predeterminado
+  let storedLanguage = "es"; 
 
   if (typeof window !== "undefined") {
     storedLanguage = localStorage.getItem("language") || "es";
@@ -30,7 +30,7 @@ const getInitialValueFromLocalStorage = () => {
 const Languages = () => {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(getInitialValueFromLocalStorage());
-  console.log(selectedLanguage)
+
   useEffect(() => {
     const storedLanguage = localStorage.getItem("language");
 
