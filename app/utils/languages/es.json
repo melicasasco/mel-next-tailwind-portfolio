@@ -1,12 +1,14 @@
 {
     "about-title": "Sobre mí",
     "greeting": "Me dicen Meli. Soy de Buenos Aires, Argentina y me gusta mucho diseñar y programar. ¡Contactame!",
-    "description": "Soy una persona organizada y con una gran motivación, apasionada por el <span class='text-purple-500 font-bold'>diseño y la tecnología.</span> Como egresada en Artes, mi devoción por la pintura y el diseño me llevó a indagar sobre la materia en el ámbito digital. Actualmente me encuentro trabajando como Jr. Frontend Developer en <a class='text-blue-600 font-bold' href='https://winguweb.org/' target='_blank'>Wingu</a> <i>- ONG de Tecnología -</i> y en <a class='text-yellow-300 font-bold' href='https://beinspiringtools.com/' target='_blank'>Be Inspiring Tools</a> <i>- agencia de Comunicación Interna y Diseño -</i> brindando soporte web y diseño gráfico.",
+    "description": "Soy una persona organizada y con una gran motivación, apasionada por el <span class='text-purple-500 font-bold'>diseño y la tecnología.</span> Como egresada en Artes, mi devoción por la pintura y el diseño me llevó a indagar sobre la materia en el ámbito digital. Actualmente me encuentro trabajando como Frontend Developer en <a class='text-blue-600 font-bold' href='https://winguweb.org/' target='_blank'>Wingu</a> <i>- ONG de Tecnología -</i> y en <a class='text-yellow-300 font-bold' href='https://beinspiringtools.com/' target='_blank'>Be Inspiring Tools</a> <i>- agencia de Comunicación Interna y Diseño -</i> brindando soporte web y diseño gráfico.",
     "latest-projects": "Últimos proyectos",
-    "subtitle-projects": "Desde el inicio de mi carrera como diseñadora y desarrolladora, he trabajado en proyectos para clientes particulares, agencias y también en proyectos propios.",
+    "subtitle-projects": "Desde el inicio de mi carrera como diseñadora y desarrolladora, he trabajado en proyectos para clientes particulares, agencias y también en proyectos propios. Encontrarás más desarrollos en mi repositorio de Github.",
     "tools": "Herramientas:",
     "landing":"Campaña anual de agencia para promoción y venta de servicios",
     "cats": " Juego de cards con fotos de mis gatitos",
     "app": "Aplicación de celular - diseño y prototipo interactivo",
+    "skills-title": "Skills",
+    "skills": "Tengo experiencia en el uso de diversas herramientas y tecnologías de desarrollo, incluyendo HTML, CSS, Javascript y frameworks como ReactJs, NextJs y Tailwind. Tengo habilidades en el uso de sistemas de control de versiones como Git para trabajar de manera colaborativa en un equipo. Estoy familiarizada con el uso Docker. Poseo experiencia en la creación de interfaces web responsive. Tengo conocimientos en el uso de herramientas de Adobe, incluyendo Photoshop, Illustrator y Adobe XD.",
     "final": "Hecho con 💜😺"
 }

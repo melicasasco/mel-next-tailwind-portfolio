@@ -84,7 +84,7 @@ export default function RootLayout() {
                 <div className=" flex justify-center text-white dark:text-gray-400">
                   <div className="mx-auto border-2 border-purple-700 bg-gradient-to-b from-purple-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 shadow-xl">
                     <Image
-                      src={"/MC.png"}
+                      src={"/img1.png"}
                       alt="meli"
                       layout="fill"
                       objectFit="cover"
@@ -102,6 +102,18 @@ export default function RootLayout() {
                       className="description-container"
                       dangerouslySetInnerHTML={{ __html: description }}
                     />
+                  </p>
+                 
+                </div>
+              </section>
+              <section className="pb-9">
+                <div>
+                  <h3 className="text-3xl py-1 text-white ">
+                    {t("skills-title")}
+                  </h3>
+                  <p className="text-md py-2 leading-8  text-white  text-gray-800 dark:text-gray-200">
+                    <span
+                    > {t("skills")}</span>
                   </p>
                  
                 </div>
