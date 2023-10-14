@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react";
 import { useTranslation, withTranslation } from "react-i18next";
 
@@ -41,7 +42,7 @@ const Languages = () => {
       localStorage.setItem("language", selectedLanguage);
     }
 
-}, []);
+}, [selectedLanguage, i18n]);
 
   const changeLanguage = (lang: string) => {
     setSelectedLanguage(lang);
