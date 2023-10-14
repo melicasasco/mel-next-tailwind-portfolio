@@ -22,7 +22,7 @@ import i18n from "./i18n";
 
 export default function RootLayout() {
   const { t } = useTranslation();
-  const description = t('description');
+  const description = t("description");
   return (
     <>
       <I18nextProvider i18n={i18n}>
@@ -46,7 +46,7 @@ export default function RootLayout() {
                   </span>
                 </nav>
 
-                <div className="text-center p-10 py-10">
+                <div className="text-center px-10 pt-10">
                   <h2 className="text-5xl py-2 text-purple-400 font-medium dark:text-purple-400 md:text-6xl">
                     Melanie Casasco
                   </h2>
@@ -80,6 +80,8 @@ export default function RootLayout() {
                       <AiFillGoogleCircle />
                     </a>
                   </div>
+                </div>
+                <div className=" flex justify-center text-white dark:text-gray-400">
                   <div className="mx-auto border-2 border-purple-700 bg-gradient-to-b from-purple-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 shadow-xl">
                     <Image
                       src={"/MC.png"}
@@ -96,8 +98,12 @@ export default function RootLayout() {
                     {t("about-title")}
                   </h3>
                   <p className="text-md py-2 leading-8  text-white  text-gray-800 dark:text-gray-200">
-                  <span className="description-container" dangerouslySetInnerHTML={{ __html: description }} />
+                    <span
+                      className="description-container"
+                      dangerouslySetInnerHTML={{ __html: description }}
+                    />
                   </p>
+                 
                 </div>
               </section>
               <section className="pb-6">
@@ -168,12 +174,11 @@ export default function RootLayout() {
                       <p className="text-white  py-1">XD ADOBE</p>
                     </div>
                   </a>
-                  
                 </div>
               </section>
               <div className="text-center text-white p-10 py-8">
-                 {t('final')}
-                </div>
+                {t("final")}
+              </div>
             </main>
           </body>
         </html>
