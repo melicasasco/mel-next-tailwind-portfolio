@@ -53,7 +53,7 @@ const Languages = () => {
   return (
     <div className="flex  items-center space-x-2">
       <select
-        className="border bg-[#222] text-white border-purple-400 rounded-xl p-2 focus:outline-none focus:border-purple-400"
+        className="border bg-[#222] text-white border-green-400 rounded-xl p-2 focus:outline-none focus:border-green-400"
         name="idioma"
         value={selectedLanguage}
         onChange={(e) => changeLanguage(e.target.value)}
