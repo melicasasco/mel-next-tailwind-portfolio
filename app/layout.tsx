@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
 import MainContent from "./MainContent";
 import Providers from "./Providers";
-import Script from "next/script";
-import GoogleAnalytics from "./GoogleAnalytics";
+// import Script from "next/script";
+// import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata = {
   title: 'Mel Portfolio',
@@ -22,7 +22,7 @@ export default function RootLayout() {
         <link rel="shortcut icon" href="/favicon.ico" />
         
         {/* Google Analytics */}
-        <Script
+        {/* <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-BFEGKVJSZ9"
         />
@@ -40,10 +40,10 @@ export default function RootLayout() {
               });
             `,
           }}
-        />
+        /> */}
       </head>
       <body>
-        <GoogleAnalytics />
+        {/* <GoogleAnalytics /> */}
         <Providers>
           <MainContent />
         </Providers>
