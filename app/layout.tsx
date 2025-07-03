@@ -4,6 +4,7 @@ import "./globals.css";
 import MainContent from "./MainContent";
 import Providers from "./Providers";
 import Script from "next/script";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata = {
   title: 'Mel Portfolio',
@@ -42,6 +43,7 @@ export default function RootLayout() {
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <Providers>
           <MainContent />
         </Providers>
