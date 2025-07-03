@@ -19,8 +19,8 @@ export default function RootLayout() {
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
-      </head>
-      <body>
+        
+        {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-BFEGKVJSZ9"
@@ -33,11 +33,15 @@ export default function RootLayout() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-BFEGKVJSZ9');
+              gtag('config', 'G-BFEGKVJSZ9', {
+                page_title: document.title,
+                page_location: window.location.href
+              });
             `,
           }}
         />
-
+      </head>
+      <body>
         <Providers>
           <MainContent />
         </Providers>
