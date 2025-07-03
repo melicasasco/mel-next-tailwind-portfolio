@@ -63,13 +63,16 @@ export default function MainContent() {
           </div>
         </div>
         <div className=" flex justify-center text-white dark:text-gray-400">
-          <div className="mx-auto border-2 border-green-700 bg-gradient-to-b from-green-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 shadow-xl">
-            <Image
-              src={"/img1.png"}
-              alt="meli"
-              layout="fill"
-              objectFit="cover"
-            />
+          <div className="mx-auto relative mt-20">
+            <div className="absolute inset-0 w-80 h-80 md:h-96 md:w-96 bg-gradient-to-t from-green-500/80 via-green-500/50 to-transparent rounded-full blur-sm"></div>
+            <div className="relative w-80 h-80 md:h-96 md:w-96 rounded-full border-2 border-green-700 overflow-hidden shadow-xl">
+              <Image
+                src={"/img1.png"}
+                alt="meli"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -109,6 +112,26 @@ export default function MainContent() {
           </p>
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto">
+        <a
+            className="w-full md:w-[300px] h-[400px]"
+            href="https://los-pollos-hermanos-app.netlify.app/"
+            target="_blank"
+          >
+            <div className="h-[350px] border border-green-200 hover:border-green-500 text-center shadow-lg p-5 rounded-xl my-10 flex-1">
+              <h3 className=" text-white text-lg font-medium pt-8 pb-2  ">
+                Landing Challenge
+              </h3>
+              <p className=" text-white py-2">{t("challenge")}</p>
+              <h4 className="py-4 text-green-300">{t("tools")}</h4>
+              <p className=" text-white text-gray-800 py-1">
+                HTML, CSS, JAVASCRIPT
+              </p>
+              <p className="text-gray-800  text-white py-1">
+                WEB DESIGN
+              </p>
+            </div>
+          </a>
+         
           <a
             className="w-full md:w-[300px] h-[400px]"
             href="https://www.thenewpeopleexperience.com.ar/"
@@ -124,11 +147,9 @@ export default function MainContent() {
                 NEXT JS, REACT JS, TAILWIND
               </p>
               <p className="text-gray-800  text-white py-1">
-                FORMSUBMIT - GOOGLE APP SCRIPT
+                FORMSUBMIT 
               </p>
-              <p className=" text-white text-gray-800 py-1">
-                FIGMA
-              </p>
+              
             </div>
           </a>
 
