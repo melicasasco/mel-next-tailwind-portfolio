@@ -3,8 +3,7 @@ import React from "react";
 import "./globals.css";
 import MainContent from "./MainContent";
 import Providers from "./Providers";
-// import Script from "next/script";
-// import GoogleAnalytics from "./GoogleAnalytics";
+import Script from "next/script";
 
 export const metadata = {
   title: 'Mel Portfolio',
@@ -22,28 +21,22 @@ export default function RootLayout() {
         <link rel="shortcut icon" href="/favicon.ico" />
         
         {/* Google Analytics */}
-        {/* <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-BFEGKVJSZ9"
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-BFEGKVJSZ9', {
-                page_title: document.title,
-                page_location: window.location.href
+              gtag('config', 'G-2MPGVF45HG', {
+                page_path: window.location.pathname,
               });
-            `,
-          }}
-        /> */}
+            `}
+          </Script>
       </head>
       <body>
-        {/* <GoogleAnalytics /> */}
         <Providers>
           <MainContent />
         </Providers>
